@@ -25,9 +25,28 @@
 ```
 
 
-- Criação com atribuição sem especificar contexto e tipagem : 
+- Declaração com atribuição sem especificar contexto e tipagem : 
 
 
 ```code 
 	message := "Hello"
 ```
+
+- O exemplo acima só pode ser usado em um codeblock . Lembrando que em Go há dois principais escopos : 
+
+* package-level-scope
+* codeblock
+
+```code
+package {
+
+    // package-level-scope
+
+    func main() {
+        // codeblock
+    }
+}
+```
+
+- E quando desejar utilizar declaração + atribuição de uma variável, só é possível em um codeblock . 
+
