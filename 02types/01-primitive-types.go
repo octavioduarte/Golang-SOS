@@ -2,10 +2,12 @@ package main
 
 import "fmt"
 
-var var_string string = "Janis"
-var var_int int = 27
-var var_bool bool = true
-var var_float float64 = 10.5
+var (
+	var_string string  = "Janis"
+	var_int    int     = 27
+	var_bool   bool    = true
+	var_float  float64 = 10.5
+)
 
 func main() {
 	fmt.Printf("Type of %v is %T\n", var_string, var_string)
