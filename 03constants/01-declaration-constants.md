@@ -3,11 +3,11 @@
 > ## Declaração 
 
 
-- Em Go não há muita diferença entre a declaração e atribuição em constantes e variáveis, a sintaxe segue
+- Em **Go** não há muita diferença entre a declaração e atribuição em constantes e variáveis, a sintaxe segue
 praticamente o mesmo principio 
 
 
-```code
+```go
 package main
 
 import "fmt"
@@ -22,7 +22,6 @@ func main() {
 	fmt.Println(age)
 }
 
-# Output
 
 // Janis Joplin
 // true
@@ -32,12 +31,12 @@ func main() {
 
 > ## Notes
 
-- Go permite a criação de constantes sem informar a tipagem . 
+ **Go permite a criação de constantes  sem informar a tipagem (e variáveis também).** 
 
 - O código abaixo funciona normalmente :
 
 
-```code 
+```go 
 package main
 
 import "fmt"
@@ -58,8 +57,6 @@ func declarationConstantWithoutType() {
 	const const_without_type = "Hello"
 	fmt.Println(const_without_type)
 }
-
-# Output
 
 // Janis Joplin
 // true
