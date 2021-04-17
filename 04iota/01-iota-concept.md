@@ -3,10 +3,10 @@
 > ## Conceito 
 
 
-- Iota é o termo técnico que Go usa para criar uma sequência de números inteiros sucessivos
+- `Iota` é o termo técnico que **Go** usa para criar uma sequência de números inteiros sucessivos
 
 
-```Code 
+```go 
 package main
 
 import "fmt"
@@ -20,9 +20,6 @@ const (
 func main() {
 	fmt.Println(C0, C1, C2)
 }
-
-
-# Output
 
 // 0 1 2
 ```
