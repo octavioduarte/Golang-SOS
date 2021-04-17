@@ -2,21 +2,18 @@
 
 > ## Declaração 
 
-- É possível criar diversas variáveis simultaneamente desde que todas tenham um único tipo : 
+* É possível criar diversas variáveis simultaneamente desde que todas tenham um único tipo : 
 
-```code 
+```go 
     var name, job, city string
 
-    /* 
-        Neste caso teríamos 3 diferentes variáveis com o valor 
-        default de strings (" ") atribuídos a elas
-    */
+    // Neste caso teríamos 3 diferentes variáveis com o valor default de strings (" ") atribuídos a elas
 ```
 
 
-- Outra forma que também deixa o código mais semântico : 
+* Outra forma que também deixa o código mais semântico : 
 
-```code 
+```go 
     var (
         item string
         price float64
@@ -28,7 +25,7 @@
 - Declaração com atribuição sem especificar contexto e tipagem : 
 
 
-```code 
+```go 
 	message := "Hello"
 ```
 
@@ -37,7 +34,7 @@
 * package-level-scope
 * codeblock
 
-```code
+```go
 package {
 
     // package-level-scope
@@ -48,5 +45,5 @@ package {
 }
 ```
 
-- E quando desejar utilizar declaração + atribuição de uma variável, só é possível em um codeblock . 
+**E quando desejar utilizar declaração + atribuição de uma variável, só é possível em um codeblock .**
 
