@@ -3,16 +3,16 @@
 > ## Operações 
 
 
-- Agora sabemos que o Iota nos permite criar com uma sequência numérica de forma mais simples, mas é importante entender também que ele possibilita criar operações que vão permitir que possamos customizar como essa sequência será iniciada .
+- Agora sabemos que o `Iota` nos permite criar com uma sequência numérica de forma mais simples, mas é importante entender também que ele possibilita criar operações que vão permitir que possamos customizar como essa sequência será iniciada .
 
 
-- Como ?
+Como ?
 
 
 - Basta que passemos uma operação cada item da sequência do Iota
 
 
-```Code 
+```go 
 package main
 
 import "fmt"
@@ -26,8 +26,6 @@ const (
 func main() {
 	fmt.Println(C1, C2, C3)
 }
-
-# Output
 
 // 5 30 100
 ```
