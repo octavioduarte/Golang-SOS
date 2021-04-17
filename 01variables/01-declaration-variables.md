@@ -2,7 +2,7 @@
 
 > ## Declaração 
 
-```code
+```go
 var name string = "Janis Joplin"
 var good_singer bool = true
 var age int = 27
@@ -10,11 +10,11 @@ var age int = 27
 
 > ## Notas
 
-- Apesar de Go ser uma linguagem fortemente tipada, ele permite a declaração
+* Apesar de `Go` ser uma **linguagem fortemente tipada**, ele permite a declaração
 de variáveis sem tipagem explicita . O compilador se encarrega da atribuíção de tipagem baseado
 no valor atribuído . 
 
-```code
+```go
 var city = "Port Arthur"
 ```
 
@@ -22,7 +22,7 @@ var city = "Port Arthur"
 valor nulo 
 
 
-```code
+```go
 var document int;   // Será atribuído   ==> 0
 var country string; // Será atribuído   ==> ""
 var logged  bool;   // Será atribuído   ==> false
