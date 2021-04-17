@@ -4,12 +4,12 @@
 
 - Go possibilita conversão de tipagem usando a seguinte sintaxe 
 
-```code
-    T(v)
+```go
+    // TipagemDesejada(ValorParaConversão)
 ```
 
 
-```code 
+```go 
 package main
 
 import "fmt"
@@ -27,8 +27,6 @@ func main() {
 	fmt.Printf("Agora o tipo de %v é %T\n", x, int(x))
 
 }
-
-# Output
 
 // O tipo inicial de 4 é main.customInt
 // Conversão realizada
