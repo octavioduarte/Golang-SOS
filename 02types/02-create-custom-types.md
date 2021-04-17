@@ -2,10 +2,10 @@
 
 > ## Tipos Customizados 
 
-- Em Go é possível criar uma tipagem customizada :
+- Em `Go` é possível criar uma tipagem customizada :
 
 
-```code 
+```go 
     package main
 
     import "fmt"
@@ -22,8 +22,6 @@
         fmt.Printf("Type of %v is %T\n", var_str, var_str)
         fmt.Printf("Type of %v is %T\n", var_int, var_int)
     }
-
-    #  Output
     
     // Type of Woodstock is main.myCustomString
     // Type of 1969 is main.myCustomInt
