@@ -14,4 +14,11 @@ func main() {
 	fmt.Println(members)
 	fmt.Println(members["Janis Joplin"])
 	fmt.Println(members["Jim Morrison"])
+
+	// Adicionando novos valores
+
+	members["Amy Winehouse"] = 2011
+
+	fmt.Println(members)
+	fmt.Println(members["Amy Winehouse"])
 }
