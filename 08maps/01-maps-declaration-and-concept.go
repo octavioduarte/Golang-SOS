@@ -21,4 +21,10 @@ func main() {
 
 	fmt.Println(members)
 	fmt.Println(members["Amy Winehouse"])
+
+	// Deletando valores
+
+	delete(members, "Kurt Cobain")
+
+	fmt.Println("Members after delete Kurt", members)
 }

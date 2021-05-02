@@ -66,3 +66,46 @@ func main() {
 // 2011
 
 ```
+
+> E deletar valores
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	members := map[string]int{
+		"Robert Johnson": 1938,
+		"Janis Joplin":   1970,
+		"Jimi Hendrix":   1970,
+		"Jim Morrison":   1971,
+		"Kurt Cobain":    1994,
+	}
+
+	fmt.Println(members)
+	fmt.Println(members["Janis Joplin"])
+	fmt.Println(members["Jim Morrison"])
+
+	// Adicionando novos valores
+
+	members["Amy Winehouse"] = 2011
+
+	fmt.Println(members)
+	fmt.Println(members["Amy Winehouse"])
+
+	// Deletando valores
+
+	delete(members, "Kurt Cobain")
+
+	fmt.Println("Members after delete Kurt", members)
+}
+
+// map[Janis Joplin:1970 Jim Morrison:1971 Jimi Hendrix:1970 Kurt Cobain:1994 Robert Johnson:1938]
+// 1970
+// 1971
+// map[Amy Winehouse:2011 Janis Joplin:1970 Jim Morrison:1971 Jimi Hendrix:1970 Kurt Cobain:1994 Robert Johnson:1938]
+// 2011
+// Members after delete Kurt map[Amy Winehouse:2011 Janis Joplin:1970 Jim Morrison:1971 Jimi Hendrix:1970 Robert Johnson:1938]
+
+```
