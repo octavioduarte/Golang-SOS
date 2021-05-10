@@ -44,3 +44,69 @@ Na prática podemos concluir que `interfaces` nada mais é do que **um conjunto 
 Em `Go` este conceito não é tão distante do cenário `Typescript`, na prática `interfaces` em `Go` também são um conjunto de assinaturas de métodos na qual todo método que a implementa deve respeitar **explicita e rigidamente** sua assinatura . 
 
 
+> Polimorfismo 
+
+Certo, agora já entendemos que **`Interfaces` são um conjunto de assinaturas de métodos na qual todo método que a implementa deva respeitar de forma **explicita e rigida** sua assinatura** . Agora é interessante entender que um dois métodos podem ter assinaturas identicas e ao mesmo tempo propósitos completamente diferentes, ou seja, diferentes métodos que respeitam a assinatura de uma interface, mas tem contextos, propósitos e consequentemente um código diferente . 
+
+Podemos ver isso neste exemplo : 
+
+
+```go
+package main
+
+import "fmt"
+
+// Interface log diz que o método que quem implementa-la, deve ter um método sem parâmetro e sem retorno, chamado say
+type logs interface { 
+	say()
+}
+
+// Struct human 👩
+type human struct {
+	name   string
+	pharse string
+}
+
+// Método say() vinculado ao struct human
+func (h human) say() {
+	fmt.Println("The human", h.name, "is speakin", h.pharse)
+}
+
+// Struct dog 🐕
+type dog struct {
+	color  string
+	pharse string
+}
+
+// Método say() vinculado ao struct dog --> Com mensagem diferentes e propósitos diferentes
+func (d dog) say() {
+	fmt.Println("The dog is speakin", d.pharse)
+}
+
+
+func handleLogs(l logs) {
+	l.say()
+}
+
+func main() {
+    // instância do struct human
+	vinnyAppice := human{name: "Viny Appice", pharse: "Thanks Ronnie !!!"}
+
+    // instância do struct dog
+	bob := dog{color: "black", pharse: "AU AU AU"}
+
+
+    // Execução do método, isso requer bastante atenção, neste momento estamos executando métodos de diferentes instâncias,
+    // com diferentes propósitos e contextos com um único trecho de código. Isso só é possível pois ambos os structs respeitam
+    // de forma rigida e explicita a interface `logs`
+	handleLogs(vinnyAppice)
+	handleLogs(bob)
+
+
+    // Em programação polimorfismo é a prática de invocar métodos que possuem a mesma assinatura, mas comportam-se de maneiras
+    // diferentes
+}
+
+// The human Viny Appice is speakin Thanks Ronnie !!!
+// The dog is speakin AU AU AU
+```
