@@ -41,6 +41,19 @@ func main() {
 
 	fmt.Println("Movie JSON =", string(mj))
     // O retorno do método Marshal é um slice of bytes, por tanto é necessário converter o retorno para o string . 
+
+	/*  
+		{
+			"Name":"Lord Of Rings Two Towers",
+			"Category":[
+				"Action",
+				"Ação"
+			],
+			"Movie_theater":false,
+			"Sinopse":"Sam is the real hero and Frodo gets in the way",
+			"Release_date_of":"2002-12-27"
+		}
+	*/
 }
 ```
 
