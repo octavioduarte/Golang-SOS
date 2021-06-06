@@ -1,4 +1,4 @@
-<h1 align="center">Go Study Notes 🖊️📘</h1>
+<h1 align="center">Go Studies Notes 🖊️📘</h1>
 
 <h1 align="center">
   <img alt="Marmota" title="#Marmota" src="./images/marmota.jpg" />
@@ -17,3 +17,5 @@
 
 
 ### [Full Cycle Course PT-BR](https://www.youtube.com/watch?v=_MkQLDMak-4&list=PL5aY_NrL1rjucQqO21QH8KclsLDYu1BIg) A YouTube course focused on Go
+
+### [PGK.GO](https://pkg.go.dev/) Website with documentation about each package GO
