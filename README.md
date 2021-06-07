@@ -19,3 +19,6 @@
 ### [Full Cycle Course PT-BR](https://www.youtube.com/watch?v=_MkQLDMak-4&list=PL5aY_NrL1rjucQqO21QH8KclsLDYu1BIg) A YouTube course focused on Go
 
 ### [PGK.GO](https://pkg.go.dev/) Website with documentation about each package GO
+
+
+## [Vídeo download tutorial](https://www.youtube.com/watch?v=4zVJBltNwD0) Simple vídeo with tutorial about how make download of Go - Ubuntu 20.04 - 18.04
